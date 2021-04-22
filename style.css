@@ -4,7 +4,7 @@ Theme URI: https://marcosrego.com/web/mrdev/
 Author: Marcos Rego
 Author URI: https://marcosrego.com
 Description: The easiest way to start creating themes with Mr.Dev.'s Framework! Mr.Dev. grabbed Underscores, the famous starter theme for Wordpress, and made it fully compatible with his Framework.
-Version: 0.9.421
+Version: 0.9.422
 Tested up to: 5.4
 Requires PHP: 5.6
 License: GNU General Public License v2 or later
@@ -527,17 +527,17 @@ table {
 --------------------------------------------- */
 
 a {
-  color: var(--text-color, #4169e1);
+  color: var(--text-color, #434b5c);
 }
 
 a:visited {
-  color: var(--text-color, #800080);
+  color: var(--text-color, #434b5c);
 }
 
 a:hover,
 a:focus,
 a:active {
-  color: var(--heading-color, #191970);
+  color: var(--text-color, #434b5c);
 }
 
 a:focus {
