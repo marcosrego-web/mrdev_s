@@ -133,7 +133,13 @@ $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
 	__FILE__,
 	'mrdev_s'
 );
-$myUpdateChecker->setBranch('master');
+global $mrdev_config_betatest;
+if($mrdev_config_betatest === 1) {
+	$myUpdateChecker->setBranch('develop');
+} else {
+	$myUpdateChecker->setBranch('master');
+}
+
 function _s_widgets_init() {
 	if(!function_exists('mrdev_header')) {
 		register_sidebar(

@@ -2,15 +2,23 @@
 <?php
 defined('ABSPATH') or die;
 
+
+//COLORS
 $mrdev_styles_colors_number_default = 20;
 
 ${"mrdev_style_color_name1"} = 'Background Color';
-${"mrdev_style_color_value1"} = '#FFFFFF';
+${"mrdev_style_color_value1"} = '#757D98';
 ${"mrdev_style_color_opacity1"} = 1;
 
 ${"mrdev_style_color_name2"} = 'Text Color';
-${"mrdev_style_color_value2"} = '#434b5c';
-${"mrdev_style_color_opacity2"} = 1;
+${"mrdev_style_color_value2"} = '#FFFFFF';
+${"mrdev_style_color_opacity2"} = 0.5;
+/*
+//Example of setting dark mode
+${"mrdev_style_color2_dark"} = array(1);
+${"mrdev_style_color_value2_dark"} = '#000000'
+${"mrdev_style_color_opacity2_dark"} = 0.5;
+*/
 
 ${"mrdev_style_color_name3"} = 'Header Background Color';
 ${"mrdev_style_color_value3"} = '#757d98';
@@ -84,6 +92,7 @@ ${"mrdev_style_color_name20"} = 'Error Color';
 ${"mrdev_style_color_value20"} = '#dc3232';
 ${"mrdev_style_color_opacity20"} = 1;
 
+//FONTS
 $mrdev_styles_fonts_number_default = 2;
 
 ${"mrdev_style_font_name1"} = 'Heading Font';
@@ -94,6 +103,7 @@ ${"mrdev_style_font_name2"} = 'Text Font';
 ${"mrdev_style_font_value2"} = 'Arial,Helvetica Neue,Helvetica';
 ${"mrdev_style_font_url2"} = '';
 
+//SIZES
 $mrdev_styles_sizes_number_default = 16;
 
 ${"mrdev_style_size_name1"} = 'Base';
@@ -160,5 +170,18 @@ ${"mrdev_style_size_name16"} = 'Border Radius';
 ${"mrdev_style_size_value16"} = 0;
 ${"mrdev_style_size_unit16"} = 'rem';
 
-$mrdev_styles_breakpoints_number_default = 4;
+/*
+//BREAKPOINTS - Example of adding breakpoints:
+$mrdev_styles_breakpoints_number_default = 5; //The framework always sets the minimum to 4 because of Mr.Utils default breakpoints.
 
+${"mrdev_style_breakpoint_name5"} = 'Desktop Blocks';
+${"mrdev_style_breakpoint_prop_min5"} = 'min-width';
+${"mrdev_style_breakpoint_value_min5"} = 0;
+${"mrdev_style_breakpoint_unit_min5"} = 'px';
+${"mrdev_style_breakpoint_prop_max5"} = 'max-width';
+${"mrdev_style_breakpoint_value_max5"} = 780;
+${"mrdev_style_breakpoint_unit_max5"} = 'px';
+${"mrdev_style_breakpoint_base_value5} = '100';
+${"mrdev_style_breakpoint_base_unit5} = '%':
+${"mrdev_style_breakpoint_base_rule5} = array('!important');
+*/
