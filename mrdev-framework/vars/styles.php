@@ -142,33 +142,33 @@ ${"mrdev_style_size_name9"} = 'Line-height';
 ${"mrdev_style_size_value9"} = 1.2;
 ${"mrdev_style_size_unit9"} = '';
 
-${"mrdev_style_size_name10"} = 'Letter Spacing';
-${"mrdev_style_size_value10"} = 0.05;
+${"mrdev_style_size_name10"} = 'Container';
+${"mrdev_style_size_value10"} = 75;
 ${"mrdev_style_size_unit10"} = 'rem';
 
-${"mrdev_style_size_name11"} = 'Container';
-${"mrdev_style_size_value11"} = 75;
+${"mrdev_style_size_name11"} = 'Padding';
+${"mrdev_style_size_value11"} = 0.75;
 ${"mrdev_style_size_unit11"} = 'rem';
 
-${"mrdev_style_size_name12"} = 'Padding';
+${"mrdev_style_size_name12"} = 'Margin';
 ${"mrdev_style_size_value12"} = 0.75;
 ${"mrdev_style_size_unit12"} = 'rem';
 
-${"mrdev_style_size_name13"} = 'Margin';
-${"mrdev_style_size_value13"} = 0.75;
-${"mrdev_style_size_unit13"} = 'rem';
+${"mrdev_style_size_name13"} = 'Transition Duration';
+${"mrdev_style_size_value13"} = 0.5;
+${"mrdev_style_size_unit13"} = 's';
 
-${"mrdev_style_size_name14"} = 'Transition Duration';
-${"mrdev_style_size_value14"} = 0.5;
-${"mrdev_style_size_unit14"} = 's';
+${"mrdev_style_size_name14"} = 'Border';
+${"mrdev_style_size_value14"} = 2;
+${"mrdev_style_size_unit14"} = 'rem';
 
-${"mrdev_style_size_name15"} = 'Border';
-${"mrdev_style_size_value15"} = 2;
+${"mrdev_style_size_name15"} = 'Border Radius';
+${"mrdev_style_size_value15"} = 0;
 ${"mrdev_style_size_unit15"} = 'rem';
 
-${"mrdev_style_size_name16"} = 'Border Radius';
-${"mrdev_style_size_value16"} = 0;
-${"mrdev_style_size_unit16"} = 'rem';
+${"mrdev_style_size_name16"} = 'Offcanvas width';
+${"mrdev_style_size_value16"} = 100;
+${"mrdev_style_size_unit16"} = '%';
 
 /*
 //BREAKPOINTS - Example of adding breakpoints:
