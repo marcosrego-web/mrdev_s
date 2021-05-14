@@ -7,27 +7,46 @@
  * @package _s
  */
 
+global $mrdev_display_exclude,$mrdev_display_content_replacement;
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
+	<?php 
+		if(!$mrdev_display_exclude || !in_array('post-title',$mrdev_display_exclude)) :
+	?>
+			<header class="entry-header">
+				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+			</header><!-- .entry-header -->
+	<?php
+		endif;
+	?>
 
-	<?php _s_post_thumbnail(); ?>
+	<?php 
+		if(!$mrdev_display_exclude || !in_array('post-thumbnail',$mrdev_display_exclude)) :
+			_s_post_thumbnail(); 
+		endif;
+	?>
 
-	<div class="entry-content">
-		<?php
-		the_content();
+	<?php 
+		if ( !empty($mrdev_display_content_replacement) && is_active_sidebar( 'content' )) :
+			dynamic_sidebar( 'content' );
+		elseif(empty($mrdev_display_content_replacement) || $mrdev_display_content_replacement !== 2) :
+	?>
+			<div class="entry-content">
+				<?php
+				the_content();
 
-		wp_link_pages(
-			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', '_s' ),
-				'after'  => '</div>',
-			)
-		);
-		?>
-	</div><!-- .entry-content -->
+				wp_link_pages(
+					array(
+						'before' => '<div class="page-links">' . esc_html__( 'Pages:', '_s' ),
+						'after'  => '</div>',
+					)
+				);
+				?>
+			</div><!-- .entry-content -->
+	<?php
+		endif;
+	?>
 
 	<?php if ( get_edit_post_link() ) : ?>
 		<footer class="entry-footer">

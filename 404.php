@@ -13,9 +13,15 @@ get_header();
 	<main id="primary" class="mr-main site-main">
 
 		<section class="mr-section error-404 not-found">
-			<header class="page-header">
-				<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', '_s' ); ?></h1>
-			</header><!-- .page-header -->
+			<?php 
+				if(!$mrdev_display_exclude || !in_array('post-title',$mrdev_display_exclude)) :
+			?>
+				<header class="page-header">
+					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', '_s' ); ?></h1>
+				</header><!-- .page-header -->
+			<?php
+				endif;
+			?>
 
 			<div class="page-content">
 				

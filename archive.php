@@ -7,21 +7,30 @@
  * @package _s
  */
 
+global $mrdev_display_exclude;
+
 get_header();
 ?>
 
 	
 
 		<?php if ( have_posts() ) { ?>
-
-			<header class="page-header">
-				<?php
-				the_archive_title( '<h1 class="page-title">', '</h1>' );
-				the_archive_description( '<div class="archive-description">', '</div>' );
-				?>
-			</header><!-- .page-header -->
-			<?php 
-				include 'mrdev-framework/functions/archivetop.php';
+			<?php
+				if(!$mrdev_display_exclude || count(array_intersect($mrdev_display_exclude,array('archive-title','archive-description'))) != count(array('archive-title','archive-description'))) :
+			?>
+					<header class="page-header">
+						<?php
+							if(!$mrdev_display_exclude || !in_array('archive-title',$mrdev_display_exclude)) :
+								the_archive_title( '<h1 class="page-title">', '</h1>' );
+							endif;
+							if(!$mrdev_display_exclude || !in_array('archive-description',$mrdev_display_exclude)) :
+								the_archive_description( '<div class="archive-description">', '</div>' );
+							endif;
+						?>
+					</header><!-- .page-header -->
+			<?php
+				endif;
+				include 'mrdev-framework/functions/layout/archivetop.php';
 			?>
 			<?php
 					/* Start the Loop */
@@ -35,7 +44,7 @@ get_header();
 						get_template_part( 'template-parts/content', get_post_type() );
 					endwhile;
 					the_posts_navigation();
-					include 'mrdev-framework/functions/archivebottom.php';
+					include 'mrdev-framework/functions/layout/archivebottom.php';
 		} else {
 			get_template_part( 'template-parts/content', 'none' );
 		}

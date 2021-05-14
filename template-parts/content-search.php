@@ -7,6 +7,7 @@
  * @package _s
  */
 
+ global $mrdev_display_exclude;
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -16,18 +17,30 @@
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
 			<?php
-			_s_posted_on();
-			_s_posted_by();
+				if( !$mrdev_display_exclude || !in_array('archive-date',$mrdev_display_exclude) ) :
+					_s_posted_on();
+				endif;
+				if( !$mrdev_display_exclude || !in_array('archive-author',$mrdev_display_exclude) ) :
+					_s_posted_by();
+				endif;
 			?>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php _s_post_thumbnail(); ?>
+	<?php 
+		if( !$mrdev_display_exclude || !in_array('archive-thumbnail',$mrdev_display_exclude) ) :
+			_s_post_thumbnail(); 
+		endif;
 
-	<div class="entry-summary">
-		<?php the_excerpt(); ?>
-	</div><!-- .entry-summary -->
+		if( !$mrdev_display_exclude || !in_array('archive-excerpt',$mrdev_display_exclude) ) :
+	?>
+			<div class="entry-summary">
+				<?php the_excerpt(); ?>
+			</div><!-- .entry-summary -->
+	<?php 
+		endif;
+	?>
 
 	<footer class="entry-footer">
 		<?php _s_entry_footer(); ?>

@@ -10,9 +10,15 @@
 ?>
 
 <section class="no-results not-found">
-	<header class="page-header">
-		<h1 class="page-title"><?php esc_html_e( 'Nothing Found', '_s' ); ?></h1>
-	</header><!-- .page-header -->
+	<?php 
+		if(!$mrdev_display_exclude || !in_array('post-title',$mrdev_display_exclude)) :
+	?>
+			<header class="page-header">
+				<h1 class="page-title"><?php esc_html_e( 'Nothing Found', '_s' ); ?></h1>
+			</header><!-- .page-header -->
+	<?php
+		endif;
+	?>
 
 	<div class="page-content">
 		<?php

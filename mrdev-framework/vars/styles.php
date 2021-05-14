@@ -166,7 +166,7 @@ ${"mrdev_style_size_name15"} = 'Border Radius';
 ${"mrdev_style_size_value15"} = 0;
 ${"mrdev_style_size_unit15"} = 'rem';
 
-${"mrdev_style_size_name16"} = 'Offcanvas width';
+${"mrdev_style_size_name16"} = 'Offcanvas Size';
 ${"mrdev_style_size_value16"} = 100;
 ${"mrdev_style_size_unit16"} = '%';
 
