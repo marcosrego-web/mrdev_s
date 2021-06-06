@@ -540,12 +540,9 @@ a:active {
   color: var(--text-color, #434b5c);
 }
 
-a:focus {
-  outline: thin dotted;
-}
-
 a:hover,
-a:active {
+a:active,
+a:focus {
   outline: 0;
 }
 
