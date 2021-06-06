@@ -37,6 +37,9 @@ if(is_singular()) {
 					?>
 				</div><!-- .entry-meta -->
 			<?php endif;
+			if( !$mrdev_display_exclude || !in_array('post-thumbnail',$mrdev_display_exclude) ) :
+				_s_post_thumbnail(); 
+			endif;
 		else :
 			if( !$mrdev_display_exclude || !in_array('archive-titles',$mrdev_display_exclude) ) :
 				the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
@@ -55,22 +58,15 @@ if(is_singular()) {
 					?>
 				</div><!-- .entry-meta -->
 			<?php endif;
+			if( !$mrdev_display_exclude || !in_array('archive-thumbnail',$mrdev_display_exclude) ) :
+				_s_post_thumbnail(); 
+			endif;
 		endif;
 
 		?>
 	</header><!-- .entry-header -->
 
 	<?php 
-		if ( $mrdev_singular === true ) :
-			if( !$mrdev_display_exclude || !in_array('post-thumbnail',$mrdev_display_exclude) ) :
-				_s_post_thumbnail(); 
-			endif;
-		else :
-			if( !$mrdev_display_exclude || !in_array('archive-thumbnail',$mrdev_display_exclude) ) :
-				_s_post_thumbnail(); 
-			endif;
-		endif;
-
 		if ( $mrdev_singular === true || $mrdev_singular === false && !$mrdev_display_exclude || $mrdev_singular === false && !in_array('archive-excerpt',$mrdev_display_exclude )) :
 	?>
 			<div class="entry-content">

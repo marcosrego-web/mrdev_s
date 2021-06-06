@@ -25,14 +25,15 @@
 				endif;
 			?>
 		</div><!-- .entry-meta -->
-		<?php endif; ?>
+		<?php 
+			endif; 
+			if( !$mrdev_display_exclude || !in_array('archive-thumbnail',$mrdev_display_exclude) ) :
+				_s_post_thumbnail(); 
+			endif;
+		?>
 	</header><!-- .entry-header -->
 
 	<?php 
-		if( !$mrdev_display_exclude || !in_array('archive-thumbnail',$mrdev_display_exclude) ) :
-			_s_post_thumbnail(); 
-		endif;
-
 		if( !$mrdev_display_exclude || !in_array('archive-excerpt',$mrdev_display_exclude) ) :
 	?>
 			<div class="entry-summary">

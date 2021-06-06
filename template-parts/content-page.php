@@ -19,9 +19,6 @@ global $mrdev_display_exclude,$mrdev_display_content_replacement;
 			</header><!-- .entry-header -->
 	<?php
 		endif;
-	?>
-
-	<?php 
 		if(!$mrdev_display_exclude || !in_array('post-thumbnail',$mrdev_display_exclude)) :
 			_s_post_thumbnail(); 
 		endif;
