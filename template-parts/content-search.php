@@ -7,7 +7,7 @@
  * @package _s
  */
 
- global $mrdev_display_exclude;
+global $mrdev_display_exclude;
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>

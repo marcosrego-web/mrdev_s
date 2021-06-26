@@ -7,6 +7,7 @@
  * @package _s
  */
 
+global $mrdev_display_exclude;
 get_header();
 ?>
 
