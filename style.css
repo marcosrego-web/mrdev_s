@@ -4,7 +4,7 @@ Theme URI: https://marcosrego.com/web/mrdev/
 Author: Marcos Rego
 Author URI: https://marcosrego.com
 Description: The easiest way to start creating with Mr.Dev.'s Framework! Mr.Dev. grabbed Underscores, the famous starter theme for Wordpress, and made it fully compatible with each and every feature of his Framework.
-Version: 0.9.432
+Version: 0.9.433
 Tested up to: 5.4
 Requires PHP: 5.6
 License: GNU General Public License v2 or later
@@ -783,11 +783,21 @@ html {
 }
 .wp-block-columns {
   margin-bottom: var(--margin, 1.75rem);
-  gap: var(--margin, 1.75rem);
 }
 @media (min-width: 782px) {
   .wp-block-column:not(:first-child) {
     margin-left: var(--margin, 2rem);
+  }
+}
+@media (min-width: 600px) and (max-width: 781px) {
+  .wp-block-column:nth-child(2n) {
+    margin-left: var(--margin, 2rem);
+  }
+}
+@media (min-width: 600px) and (max-width: 781px) {
+  .wp-block-column:not(:only-child) {
+    flex-basis: calc(50% - (var(--margin, 2rem) / 2)) !important;
+    flex-grow: 0;
   }
 }
 /* Other styles
