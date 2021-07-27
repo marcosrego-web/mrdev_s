@@ -6,7 +6,6 @@
  *
  * @package _s
  */
-
 /**
  * WooCommerce setup function.
  *
@@ -34,7 +33,6 @@ function _s_woocommerce_setup() {
 	add_theme_support( 'wc-product-gallery-slider' );
 }
 add_action( 'after_setup_theme', '_s_woocommerce_setup' );
-
 /**
  * WooCommerce specific scripts & stylesheets.
  *
@@ -42,7 +40,6 @@ add_action( 'after_setup_theme', '_s_woocommerce_setup' );
  */
 function _s_woocommerce_scripts() {
 	wp_enqueue_style( '_s-woocommerce-style', get_template_directory_uri() . '/woocommerce.css', array(), _S_VERSION );
-
 	$font_path   = WC()->plugin_url() . '/assets/fonts/';
 	$inline_font = '@font-face {
 			font-family: "star";
@@ -54,11 +51,9 @@ function _s_woocommerce_scripts() {
 			font-weight: normal;
 			font-style: normal;
 		}';
-
 	wp_add_inline_style( '_s-woocommerce-style', $inline_font );
 }
 add_action( 'wp_enqueue_scripts', '_s_woocommerce_scripts' );
-
 /**
  * Disable the default WooCommerce stylesheet.
  *
@@ -68,7 +63,6 @@ add_action( 'wp_enqueue_scripts', '_s_woocommerce_scripts' );
  * @link https://docs.woocommerce.com/document/disable-the-default-stylesheet/
  */
 add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
-
 /**
  * Add 'woocommerce-active' class to the body tag.
  *
@@ -77,11 +71,9 @@ add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
  */
 function _s_woocommerce_active_body_class( $classes ) {
 	$classes[] = 'woocommerce-active';
-
 	return $classes;
 }
 add_filter( 'body_class', '_s_woocommerce_active_body_class' );
-
 /**
  * Related Products Args.
  *
@@ -93,19 +85,15 @@ function _s_woocommerce_related_products_args( $args ) {
 		'posts_per_page' => 3,
 		'columns'        => 3,
 	);
-
 	$args = wp_parse_args( $defaults, $args );
-
 	return $args;
 }
 add_filter( 'woocommerce_output_related_products_args', '_s_woocommerce_related_products_args' );
-
 /**
  * Remove default WooCommerce wrapper.
  */
 remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10 );
 remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10 );
-
 /**
  * Sample implementation of the WooCommerce Mini Cart.
  *
@@ -117,7 +105,6 @@ remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wra
 		}
 	?>
  */
-
 if ( ! function_exists( '_s_woocommerce_cart_link_fragment' ) ) {
 	/**
 	 * Cart Fragments.
@@ -131,12 +118,10 @@ if ( ! function_exists( '_s_woocommerce_cart_link_fragment' ) ) {
 		ob_start();
 		_s_woocommerce_cart_link();
 		$fragments['a.cart-contents'] = ob_get_clean();
-
 		return $fragments;
 	}
 }
 add_filter( 'woocommerce_add_to_cart_fragments', '_s_woocommerce_cart_link_fragment' );
-
 if ( ! function_exists( '_s_woocommerce_cart_link' ) ) {
 	/**
 	 * Cart Link.
@@ -160,7 +145,6 @@ if ( ! function_exists( '_s_woocommerce_cart_link' ) ) {
 		<?php
 	}
 }
-
 if ( ! function_exists( '_s_woocommerce_header_cart' ) ) {
 	/**
 	 * Display Header Cart.
@@ -183,7 +167,6 @@ if ( ! function_exists( '_s_woocommerce_header_cart' ) ) {
 				$instance = array(
 					'title' => '',
 				);
-
 				the_widget( 'WC_Widget_Cart', $instance );
 				?>
 			</li>

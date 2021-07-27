@@ -6,16 +6,13 @@
  *
  * @package _s
  */
-
 global $mrdev_display_exclude,$mrdev_display_content_replacement;
-
 if(is_singular()) {
 	$mrdev_singular = true;
 } else {
 	$mrdev_singular = false;
 }
 ?>
-
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php
@@ -23,7 +20,6 @@ if(is_singular()) {
 			if( !$mrdev_display_exclude || !in_array('post-title',$mrdev_display_exclude) ) :
 				the_title( '<h1 class="entry-title">', '</h1>' );
 			endif;
-
 			if ( 'post' === get_post_type() ) :
 				?>
 				<div class="entry-meta">
@@ -44,7 +40,6 @@ if(is_singular()) {
 			if( !$mrdev_display_exclude || !in_array('archive-titles',$mrdev_display_exclude) ) :
 				the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 			endif;
-
 			if ( 'post' === get_post_type() ) :
 				?>
 				<div class="entry-meta">
@@ -62,10 +57,8 @@ if(is_singular()) {
 				_s_post_thumbnail(); 
 			endif;
 		endif;
-
 		?>
 	</header><!-- .entry-header -->
-
 	<?php 
 		if ( $mrdev_singular === true || $mrdev_singular === false && !$mrdev_display_exclude || $mrdev_singular === false && !in_array('archive-excerpt',$mrdev_display_exclude )) :
 	?>
@@ -93,7 +86,6 @@ if(is_singular()) {
 						);
 					endif;
 				endif;
-
 				wp_link_pages(
 					array(
 						'before' => '<div class="page-links">' . esc_html__( 'Pages:', '_s' ),
@@ -104,7 +96,6 @@ if(is_singular()) {
 			</div><!-- .entry-content -->
 	<?php
 		endif;
-
 		if( !$mrdev_display_exclude || $mrdev_singular === true && !in_array('post-taxonomies',$mrdev_display_exclude) || $mrdev_singular === false && !in_array('archive-taxonomies',$mrdev_display_exclude) ) :
 	?>
 			<footer class="entry-footer">

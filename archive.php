@@ -6,13 +6,9 @@
  *
  * @package _s
  */
-
 global $mrdev_display_exclude;
 get_header();
 ?>
-
-	
-
 		<?php if ( have_posts() ) { ?>
 			<?php
 				if(!$mrdev_display_exclude || count(array_intersect($mrdev_display_exclude,array('archive-title','archive-description'))) != count(array('archive-title','archive-description'))) :
@@ -48,8 +44,6 @@ get_header();
 			get_template_part( 'template-parts/content', 'none' );
 		}
 		?>
-	
-
 <?php
 get_sidebar();
 get_footer();

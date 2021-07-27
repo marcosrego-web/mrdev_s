@@ -6,7 +6,6 @@
  *
  * @package _s
  */
-
 /**
  * Jetpack setup function.
  *
@@ -24,10 +23,8 @@ function _s_jetpack_setup() {
 			'footer'    => 'page',
 		)
 	);
-
 	// Add theme support for Responsive Videos.
 	add_theme_support( 'jetpack-responsive-videos' );
-
 	// Add theme support for Content Options.
 	add_theme_support(
 		'jetpack-content-options',
@@ -49,7 +46,6 @@ function _s_jetpack_setup() {
 	);
 }
 add_action( 'after_setup_theme', '_s_jetpack_setup' );
-
 /**
  * Custom render function for Infinite Scroll.
  */

@@ -6,14 +6,11 @@
  *
  * @package _s
  */
-
 global $mrdev_display_exclude;
 ?>
-
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
 			<?php
@@ -32,7 +29,6 @@ global $mrdev_display_exclude;
 			endif;
 		?>
 	</header><!-- .entry-header -->
-
 	<?php 
 		if( !$mrdev_display_exclude || !in_array('archive-excerpt',$mrdev_display_exclude) ) :
 	?>
@@ -42,7 +38,6 @@ global $mrdev_display_exclude;
 	<?php 
 		endif;
 	?>
-
 	<footer class="entry-footer">
 		<?php _s_entry_footer(); ?>
 	</footer><!-- .entry-footer -->

@@ -4,24 +4,20 @@ Theme URI: https://marcosrego.com/web/mrdev/
 Author: Marcos Rego
 Author URI: https://marcosrego.com
 Description: The easiest way to start creating with Mr.Dev.'s Framework! Mr.Dev. grabbed Underscores, the famous starter theme for Wordpress, and made it fully compatible with each and every feature of his Framework.
-Version: 0.9.435
+Version: 0.9.436
 Tested up to: 5.4
 Requires PHP: 5.6
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: mrdev_s
 Tags: mrdev, framework, underscores, _s, customize, control, featured-images, threaded-comments, translation-ready
-
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned.
-
 Mr.Dev_s is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
-
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
-
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
@@ -45,21 +41,15 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Utilities
 	- Accessibility
 	- Alignments
-
 --------------------------------------------------------------*/
-
 /*--------------------------------------------------------------
 # Generic
 --------------------------------------------------------------*/
-
 /* Normalize
 --------------------------------------------- */
-
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-
 /* Document
 	 ========================================================================== */
-
 /**
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
@@ -68,27 +58,22 @@ html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
 }
-
 /* Sections
 	 ========================================================================== */
-
 /**
  * emove the margin in all browsers.
  */
 body {
   margin: 0;
 }
-
 /**
  * Render the `main` element consistently in IE.
  */
 main {
   display: block;
 }
-
 /* Grouping content
 	 ========================================================================== */
-
 /**
  * 1. Add the correct box sizing in Firefox.
  * 2. Show the overflow in Edge and IE.
@@ -98,7 +83,6 @@ hr {
   height: 0;
   overflow: visible;
 }
-
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
@@ -107,17 +91,14 @@ pre {
   font-family: monospace, monospace;
   font-size: 1em;
 }
-
 /* Text-level semantics
 	 ========================================================================== */
-
 /**
  * emove the gray background on active links in IE 10.
  */
 a:not(.has-background) {
   background-color: transparent;
 }
-
 /**
  * 1. emove the bottom border in Chrome 57-
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
@@ -127,7 +108,6 @@ abbr[title] {
   text-decoration: underline;
   text-decoration: underline dotted;
 }
-
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
@@ -135,7 +115,6 @@ b,
 strong {
   font-weight: bolder;
 }
-
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
@@ -146,14 +125,12 @@ samp {
   font-family: monospace, monospace;
   font-size: var(--text, 1rem);
 }
-
 /**
  * Add the correct font size in all browsers.
  */
 small {
   font-size: 80%;
 }
-
 /**
  * Prevent `sub` and `sup` elements from affecting the line height in
  * all browsers.
@@ -165,28 +142,22 @@ sup {
   position: relative;
   vertical-align: baseline;
 }
-
 sub {
   bottom: -0.25em;
 }
-
 sup {
   top: -0.5em;
 }
-
 /* Embedded content
 	 ========================================================================== */
-
 /**
  * emove the border on images inside links in IE 10.
  */
 img {
   border-style: none;
 }
-
 /* Forms
 	 ========================================================================== */
-
 /**
  * 1. Change the font styles in all browsers.
  * 2. emove the margin in Firefox and Safari.
@@ -201,7 +172,6 @@ textarea {
   line-height: var(--line-height, 1.15);
   margin: 0;
 }
-
 /**
  * Show the overflow in IE.
  * 1. Show the overflow in Edge.
@@ -210,7 +180,6 @@ button,
 input {
   overflow: visible;
 }
-
 /**
  * emove the inheritance of text transform in Edge, Firefox, and IE.
  * 1. emove the inheritance of text transform in Firefox.
@@ -219,7 +188,6 @@ button,
 select {
   text-transform: none;
 }
-
 /**
  * Correct the inability to style clickable types in iOS and Safari.
  */
@@ -229,7 +197,6 @@ button,
 [type="submit"] {
   -webkit-appearance: button;
 }
-
 /**
  * emove the inner border and padding in Firefox.
  */
@@ -240,7 +207,6 @@ button::-moz-focus-inner,
   border-style: none;
   padding: 0;
 }
-
 /**
  * Restore the focus styles unset by the previous rule.
  */
@@ -250,14 +216,12 @@ button:-moz-focusring,
 [type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
-
 /**
  * Correct the padding in Firefox.
  */
 fieldset {
   padding: 0.35em 0.75em 0.625em;
 }
-
 /**
  * 1. Correct the text wrapping in Edge and IE.
  * 2. Correct the color inheritance from `fieldset` elements in IE.
@@ -272,21 +236,18 @@ legend {
   padding: 0;
   white-space: normal;
 }
-
 /**
  * Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
 progress {
   vertical-align: baseline;
 }
-
 /**
  * emove the default vertical scrollbar in IE 10+.
  */
 textarea {
   overflow: auto;
 }
-
 /**
  * 1. Add the correct box sizing in IE 10.
  * 2. emove the padding in IE 10.
@@ -296,7 +257,6 @@ textarea {
   box-sizing: border-box;
   padding: 0;
 }
-
 /**
  * Correct the cursor style of incement and decement buttons in Chrome.
  */
@@ -304,7 +264,6 @@ textarea {
 [type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
-
 /**
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
@@ -313,14 +272,12 @@ textarea {
   -webkit-appearance: textfield;
   outline-offset: -2px;
 }
-
 /**
  * emove the inner padding in Chrome and Safari on macOS.
  */
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
-
 /**
  * 1. Correct the inability to style clickable types in iOS and Safari.
  * 2. Change font properties to `inherit` in Safari.
@@ -329,44 +286,36 @@ textarea {
   -webkit-appearance: button;
   font: inherit;
 }
-
 /* Interactive
 	 ========================================================================== */
-
 /*
  * Add the correct display in Edge, IE 10+, and Firefox.
  */
 details {
   display: block;
 }
-
 /*
  * Add the correct display in all browsers.
  */
 summary {
   display: list-item;
 }
-
 /* Misc
 	 ========================================================================== */
-
 /**
  * Add the correct display in IE 10+.
  */
 template {
   display: none;
 }
-
 /**
  * Add the correct display in IE 10.
  */
 [hidden] {
   display: none;
 }
-
 /* Box sizing
 --------------------------------------------- */
-
 /* Inherit box-sizing to more easily change it's value on a component level.
 @link http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
 *,
@@ -374,15 +323,12 @@ template {
 *::after {
   box-sizing: inherit;
 }
-
 html {
   box-sizing: border-box;
 }
-
 /*--------------------------------------------------------------
 # Base
 --------------------------------------------------------------*/
-
 /* Typography
 --------------------------------------------- */
 body,
@@ -396,7 +342,6 @@ textarea {
   font-size: var(--text, 1rem);
   line-height: var(--line-height, 1.5);
 }
-
 h1,
 h2,
 h3,
@@ -406,26 +351,21 @@ h6 {
   clear: both;
   font-weight: unset;
 }
-
 p {
   margin-bottom: var(--margin, 1.5rem);
 }
-
 dfn,
 cite,
 em,
 i {
   font-style: italic;
 }
-
 blockquote {
   margin: 0 var(--margin, 1.5rem);
 }
-
 address {
   margin: 0 0 var(--margin, 1.5rem);
 }
-
 pre {
   background: #eee;
   font-family: "Courier 10 Pitch", courier, monospace;
@@ -435,163 +375,131 @@ pre {
   overflow: auto;
   padding: var(--padding, 1.6rem);
 }
-
 code,
 kbd,
 tt,
 var {
   font-family: monaco, consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 }
-
 abbr,
 acronym {
   border-bottom: 1px dotted var(--overlay-color, #666);
   cursor: help;
 }
-
 mark,
 ins {
   background: var(--overlay-color, #fff9c0);
   text-decoration: none;
 }
-
 big {
   font-size: 125%;
 }
-
 /* Elements
 --------------------------------------------- */
 body {
   background: var(--background-color, #fff);
 }
-
 hr:not(.has-background) {
   background-color: var(--text-color, #ccc);
 }
-
 hr {
   border: 0;
   height: 1px;
   margin-bottom: var(--margin, 1.5rem);
 }
-
 ul,
 ol {
   margin: 0 0 var(--margin, 1.5rem) calc(var(--margin, 1.5rem) * 2);
 }
-
 ul {
   list-style: disc;
 }
-
 ol {
   list-style: decimal;
 }
-
 li > ul,
 li > ol {
   margin-bottom: 0;
   margin-left: var(--margin, 1.5rem);
 }
-
 dt {
   font-weight: 700;
 }
-
 dd {
   margin: 0 var(--margin, 1.5rem) var(--margin, 1.5rem);
 }
-
 /* Make sure embeds and iframes fit their containers. */
 embed,
 iframe,
 object {
   max-width: 100%;
 }
-
 img {
   height: auto;
   max-width: 100%;
 }
-
 figure {
   margin: var(--margin, 1rem) 0;
 }
-
 table {
   margin: 0 0 var(--margin, 1.5rem);
   width: 100%;
 }
-
 /* Links
 --------------------------------------------- */
-
 a {
   color: var(--text-color, #434b5c);
 }
-
 a:visited {
   color: var(--text-color, #434b5c);
 }
-
 a:hover,
 a:focus,
 a:active {
   color: var(--text-color, #434b5c);
 }
-
 a:hover,
 a:active,
 a:focus {
   outline: 0;
 }
-
 /* Posts and pages
 --------------------------------------------- */
 .sticky {
   display: block;
 }
-
 .post,
 .page {
   margin: 0 0 var(--margin, 1.5rem);
 }
-
 .updated:not(.published) {
   display: none;
 }
-
 .page-content,
 .entry-content,
 .entry-summary {
   margin: var(--margin, 1.5rem) 0 0;
 }
-
 .page-links {
   clear: both;
   margin: 0 0 var(--margin, 1.5rem);
 }
-
 /* Comments
 --------------------------------------------- */
 .comment-content a {
   word-wrap: break-word;
 }
-
 .bypostauthor {
   display: block;
 }
-
 /* Widgets
 --------------------------------------------- */
 .widget {
   margin: 0 0 var(--margin, 1.5rem);
 }
-
 .widget select {
   max-width: 100%;
 }
-
 /* Media
 --------------------------------------------- */
 .page-content .wp-smiley,
@@ -602,33 +510,27 @@ a:focus {
   margin-top: 0;
   padding: 0;
 }
-
 /* Make sure logo link wraps around logo image. */
 .custom-logo-link {
   display: inline-block;
 }
-
 /* Captions
 --------------------------------------------- */
 .wp-caption {
   margin-bottom: var(--margin, 1.5rem);
   max-width: 100%;
 }
-
 .wp-caption img[class*="wp-image-"] {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-
 .wp-caption .wp-caption-text {
   margin: var(--margin, 1.5rem) 0;
 }
-
 .wp-caption-text {
   text-align: center;
 }
-
 /* Galleries
 --------------------------------------------- */
 .gallery {
@@ -636,74 +538,57 @@ a:focus {
   display: grid;
   grid-gap: var(--margin, 1.5rem);
 }
-
 .gallery-item {
   display: inline-block;
   text-align: center;
   width: 100%;
 }
-
 .gallery-columns-2 {
   grid-template-columns: repeat(2, 1fr);
 }
-
 .gallery-columns-3 {
   grid-template-columns: repeat(3, 1fr);
 }
-
 .gallery-columns-4 {
   grid-template-columns: repeat(4, 1fr);
 }
-
 .gallery-columns-5 {
   grid-template-columns: repeat(5, 1fr);
 }
-
 .gallery-columns-6 {
   grid-template-columns: repeat(6, 1fr);
 }
-
 .gallery-columns-7 {
   grid-template-columns: repeat(7, 1fr);
 }
-
 .gallery-columns-8 {
   grid-template-columns: repeat(8, 1fr);
 }
-
 .gallery-columns-9 {
   grid-template-columns: repeat(9, 1fr);
 }
-
 .gallery-caption {
   display: block;
 }
-
 /*--------------------------------------------------------------
 # Plugins
 --------------------------------------------------------------*/
-
 /* Jetpack infinite scroll
 --------------------------------------------- */
-
 /* Hide the Posts Navigation and the Footer when Infinite Scroll is in use. */
 .infinite-scroll .posts-navigation,
 .infinite-scroll.neverending .site-footer {
   display: none;
 }
-
 /* Re-display the Theme Footer when Infinite Scroll has reached its end. */
 .infinity-end.neverending .site-footer {
   display: block;
 }
-
 /*--------------------------------------------------------------
 # Utilities
 --------------------------------------------------------------*/
-
 /* Accessibility
 --------------------------------------------- */
-
 /* Text meant only for screen readers. */
 .screen-reader-text {
   border: 0;
@@ -717,7 +602,6 @@ a:focus {
   width: 1px;
   word-wrap: normal !important;
 }
-
 .screen-reader-text:focus {
   background-color: #f1f1f1;
   border-radius: 3px;
@@ -737,32 +621,26 @@ a:focus {
   width: auto;
   z-index: 100000;
 }
-
 /* Do not show the outline on the skip link target. */
 #primary[tabindex="-1"]:focus {
   outline: 0;
 }
-
 /* Alignments
 --------------------------------------------- */
 .alignleft {
   /*rtl:ignore*/
   float: left;
-
   /*rtl:ignore*/
   margin-right: var(--margin, 1.5rem);
   margin-bottom: var(--margin, 1.5rem);
 }
-
 .alignright {
   /*rtl:ignore*/
   float: right;
-
   /*rtl:ignore*/
   margin-left: var(--margin, 1.5rem);
   margin-bottom: var(--margin, 1.5rem);
 }
-
 .aligncenter {
   clear: both;
   display: block;
@@ -770,7 +648,6 @@ a:focus {
   margin-right: auto;
   margin-bottom: var(--margin, 1.5rem);
 }
-
 /* Other style changes
 --------------------------------------------- */
 html {

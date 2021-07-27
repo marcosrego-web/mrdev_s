@@ -6,13 +6,10 @@
  *
  * @package _s
  */
-
 global $mrdev_display_exclude;
 get_header();
 ?>
-
 	<main id="primary" class="mr-main site-main">
-
 		<section class="mr-section error-404 not-found">
 			<?php 
 				if(!$mrdev_display_exclude || !in_array('post-title',$mrdev_display_exclude)) :
@@ -23,15 +20,10 @@ get_header();
 			<?php
 				endif;
 			?>
-
 			<div class="page-content">
-				
 				<p><?php esc_html_e( 'It looks like nothing was found at this location.', '_s' ); ?></p>
-
 			</div><!-- .page-content -->
 		</section><!-- .error-404 -->
-
 	</main><!-- #main -->
-
 <?php
 get_footer();

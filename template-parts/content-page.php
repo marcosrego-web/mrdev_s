@@ -6,10 +6,8 @@
  *
  * @package _s
  */
-
 global $mrdev_display_exclude,$mrdev_display_content_replacement;
 ?>
-
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php 
 		if(!$mrdev_display_exclude || !in_array('post-title',$mrdev_display_exclude)) :
@@ -23,7 +21,6 @@ global $mrdev_display_exclude,$mrdev_display_content_replacement;
 			_s_post_thumbnail(); 
 		endif;
 	?>
-
 	<?php 
 		if ( !empty($mrdev_display_content_replacement) && is_active_sidebar( 'content' )) :
 			dynamic_sidebar( 'content' );
@@ -32,7 +29,6 @@ global $mrdev_display_exclude,$mrdev_display_content_replacement;
 			<div class="entry-content">
 				<?php
 				the_content();
-
 				wp_link_pages(
 					array(
 						'before' => '<div class="page-links">' . esc_html__( 'Pages:', '_s' ),
@@ -44,7 +40,6 @@ global $mrdev_display_exclude,$mrdev_display_content_replacement;
 	<?php
 		endif;
 	?>
-
 	<?php if ( get_edit_post_link() ) : ?>
 		<footer class="entry-footer">
 			<?php

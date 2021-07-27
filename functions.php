@@ -6,12 +6,10 @@
  *
  * @package _s
  */
-
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
 	define( '_S_VERSION', '1.0.0' );
 }
-
 if ( ! function_exists( '_s_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
@@ -28,10 +26,8 @@ if ( ! function_exists( '_s_setup' ) ) :
 		 * to change '_s' to the name of your theme in all the template files.
 		 */
 		load_theme_textdomain( '_s', get_template_directory() . '/languages' );
-
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
-
 		/*
 		 * Let WordPress manage the document title.
 		 * By adding theme support, we declare that this theme does not use a
@@ -39,14 +35,12 @@ if ( ! function_exists( '_s_setup' ) ) :
 		 * provide it for us.
 		 */
 		add_theme_support( 'title-tag' );
-
 		/*
 		 * Enable support for Post Thumbnails on posts and pages.
 		 *
 		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		 */
 		add_theme_support( 'post-thumbnails' );
-
 		/*
 		 * Switch default core markup for search form, comment form, and comments
 		 * to output valid HTML5.
@@ -63,16 +57,13 @@ if ( ! function_exists( '_s_setup' ) ) :
 				'script',
 			)
 		);
-
 		// Add theme support for selective refresh for widgets.
 		add_theme_support( 'customize-selective-refresh-widgets' );
-
 		// Add templates support on the blocks editor.
 		add_theme_support( 'block-templates' );
 	}
 endif;
 add_action( 'after_setup_theme', '_s_setup' );
-
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
@@ -84,49 +75,41 @@ function _s_content_width() {
 	$GLOBALS['content_width'] = apply_filters( '_s_content_width', 640 );
 }
 //add_action( 'after_setup_theme', '_s_content_width', 0 );
-
 /**
  * Enqueue scripts and styles.
  */
 function _s_scripts() {
 	wp_enqueue_style( '_s-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( '_s-style', 'rtl', 'replace' );
-
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
 add_action( 'wp_enqueue_scripts', '_s_scripts' );
-
 /**
  * Implement the Custom Header feature.
  */
 //require get_template_directory() . '/inc/custom-header.php';
-
 /**
  * Custom template tags for this theme.
  */
 require get_template_directory() . '/inc/template-tags.php';
-
 /**
  * Functions which enhance the theme by hooking into WordPress.
  */
 require get_template_directory() . '/inc/template-functions.php';
-
 /**
  * Load Jetpack compatibility file.
  */
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
-
 /**
  * Load WooCommerce compatibility file.
  */
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
-
 /*
 Mr.Dev.'s functions and tools start here:
 */
