@@ -10,7 +10,7 @@ Being fully compatible with the framework is not mandatory. But this theme is be
 
 - 20 colors. Because this theme is inspired by Underscores, the default color values are the colors of Underscores website.
 
-- 2 fonts. Being a starter theme it was decided to use system fonts by default: "Times New Roman" for headings and "Arial" for other text _(but this might change in the future)_-
+- 2 fonts. Being a starter theme it was decided to use system fonts by default: "Times New Roman" for headings and "Arial" for other text _(but this might change in the future)_.
 
 - 16 preset sizes. You can check all the defaults on _mrdev-framework/vars/styles.php_. _(Also there you can find a comment showing how to add breakpoints from the theme)_
 

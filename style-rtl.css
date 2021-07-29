@@ -655,6 +655,7 @@ html {
   height: 100%;
   font-size: var(--base, 100%);
   -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 .wp-block-image {
   margin-bottom: var(--margin, 1rem);
