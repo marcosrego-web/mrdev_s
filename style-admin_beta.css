@@ -155,7 +155,11 @@ body {
   *:not(button):not(svg):not(path):not([class^="cm-"]):not([role="treeitem"]):not(.components-checkbox-control__label):not(.components-toggle-control__label):not(.components-base-control__label):not(span) {
   color: var(--main-text-color) !important;
 }*/
-body * {
+body *,
+p,
+li,
+th,
+label {
   font-family: var(--text-font, "Arial,Helvetica Neue,Helvetica");
 }
 p,
@@ -165,7 +169,11 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+th,
+label,
+.form-table th,
+.form-wrap label {
   color: var(--main-text-color) !important;
 }
 h1,
