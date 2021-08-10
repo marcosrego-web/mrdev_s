@@ -29,7 +29,7 @@ input[type="week"]:focus,
 select:focus,
 textarea:focus,
 .wp-core-ui .button-primary {
-  border-color: var(--offcanvas-text-color, #ffffff) !important;
+  border-color: var(--offcanvas-text-color, #8cc7c2) !important;
 }
 input[type="checkbox"]:focus,
 input[type="color"]:focus,
@@ -50,7 +50,7 @@ input[type="week"]:focus,
 select:focus,
 textarea:focus,
 a:focus {
-  box-shadow: 0 0 0 1px var(--offcanvas-text-color, #ffffff);
+  box-shadow: 0 0 0 1px var(--offcanvas-text-color, #8cc7c2);
 }
 
 .login form,
@@ -144,7 +144,7 @@ table.widefat,
 #wpadminbar li:hover .ab-item:before,
 #wpadminbar.nojs .quicklinks .menupop:hover ul li a:focus,
 #wpadminbar.nojs .quicklinks .menupop:hover ul li a:hover {
-  color: var(--offcanvas-text-color, #ffffff) !important;
+  color: var(--offcanvas-text-color, #8cc7c2) !important;
 }
 body {
   background: var(--main-background-color, #dfdfd0) !important;
@@ -184,7 +184,7 @@ h6 {
 .wp-core-ui .button:not(.button-primary),
 .wp-core-ui .button-secondary,
 .login .privacy-policy-page-link .privacy-policy-link {
-  color: var(--offcanvas-text-color, #ffffff) !important;
+  color: var(--offcanvas-text-color, #8cc7c2) !important;
 }
 #adminmenu .wp-has-current-submenu .wp-submenu,
 #adminmenu .wp-has-current-submenu .wp-submenu.sub-open,
@@ -253,9 +253,10 @@ ul.striped > :nth-child(odd),
 .components-popover.block-editor-block-switcher__popover
   .components-popover__content
   > div,
-.block-editor-block-inspector__no-blocks {
-  background: var(--offcanvas-background-color, #23282d) !important;
-  color: var(--offcanvas-text-color, #ffffff) !important;
+.block-editor-block-inspector__no-blocks,
+.block-editor-block-contextual-toolbar {
+  background: var(--offcanvas-background-color, #757d98) !important;
+  color: var(--offcanvas-text-color, #8cc7c2) !important;
 }
 #adminmenu *,
 #adminmenu .wp-submenu *,
@@ -280,17 +281,17 @@ ul.striped > :nth-child(odd),
 .components-button[aria-expanded="true"],
 .components-button.block-editor-block-types-list__item,
 .components-button {
-  color: var(--offcanvas-text-color, #ffffff) !important;
+  color: var(--offcanvas-text-color, #8cc7c2) !important;
 }
 .edit-post-header .components-button svg,
 .block-editor-block-icon.has-colors svg {
-  fill: var(--offcanvas-text-color, #ffffff) !important;
+  fill: var(--offcanvas-text-color, #8cc7c2) !important;
 }
 .components-button.edit-post-sidebar__panel-tab.is-active,
 .components-button.edit-post-sidebar__panel-tab.is-active:focus,
 .components-tab-panel__tabs-item.is-active {
   box-shadow: inset 0 0 0 var(--wp-admin-border-width-focus) transparent,
-    inset 0 -4px 0 0 var(--offcanvas-text-color, #ffffff);
+    inset 0 -4px 0 0 var(--offcanvas-text-color, #8cc7c2);
 }
 .notice-info {
   border-left-color: var(--info-color, #3d9cd2) !important;
