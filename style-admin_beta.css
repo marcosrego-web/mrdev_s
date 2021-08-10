@@ -146,7 +146,8 @@ body {
   color: var(--main-text-color, #434b5c) !important;
   font-family: var(--text-font, "Arial,Helvetica Neue,Helvetica");
 }
-body *:not(button):not(svg):not(path):not([class^="cm-"]) {
+body
+  *:not(button):not(svg):not(path):not([class^="cm-"]):not([role="treeitem"]) {
   color: var(--main-text-color) !important;
 }
 body * {
