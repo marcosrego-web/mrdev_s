@@ -67,7 +67,8 @@ table.widefat,
 .notice,
 div.error,
 div.updated,
-.plugins tr {
+.plugins tr,
+#screen-meta {
   background: var(--main-background-color, #dfdfd0) !important;
   color: var(--main-text-color, #434b5c) !important;
 }
@@ -112,7 +113,8 @@ table.widefat,
 #wpadminbar:not(.mobile) .ab-top-menu > li > .ab-item:focus,
 #wpadminbar .menupop .ab-sub-wrapper,
 #wpadminbar .shortlink-input,
-.postbox-header {
+.postbox-header,
+#screen-meta-links .show-settings {
   background: var(--header-background-color, #757d98) !important;
   color: var(--header-text-color, #8cc7c2) !important;
   outline: 1px solid #e0e0e0;
@@ -149,12 +151,22 @@ body {
   color: var(--main-text-color, #434b5c) !important;
   font-family: var(--text-font, "Arial,Helvetica Neue,Helvetica");
 }
-body
-  *:not(button):not(svg):not(path):not([class^="cm-"]):not([role="treeitem"]) {
+/*body
+  *:not(button):not(svg):not(path):not([class^="cm-"]):not([role="treeitem"]):not(.components-checkbox-control__label):not(.components-toggle-control__label):not(.components-base-control__label):not(span) {
   color: var(--main-text-color) !important;
-}
+}*/
 body * {
   font-family: var(--text-font, "Arial,Helvetica Neue,Helvetica");
+}
+p,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--main-text-color) !important;
 }
 h1,
 h2,
@@ -185,12 +197,10 @@ h6 {
   color: var(--aside-text-color, #434b5c) !important;
   outline: 1px solid #e0e0e0;
 }
-#adminmenu .wp-has-current-submenu .wp-submenu,
-#adminmenu .wp-has-current-submenu .wp-submenu.sub-open,
+#adminmenu #adminmenu .wp-has-current-submenu .wp-submenu.sub-open,
 #adminmenu .wp-has-current-submenu.opensub .wp-submenu,
 #adminmenu a.wp-has-current-submenu:focus + .wp-submenu,
 .no-js li.wp-has-current-submenu:hover .wp-submenu,
-#adminmenu .wp-submenu,
 .folded #adminmenu .wp-has-current-submenu .wp-submenu,
 .folded #adminmenu a.wp-has-current-submenu:focus + .wp-submenu,
 .plugins .active td,
@@ -202,12 +212,10 @@ ul.striped > :nth-child(odd),
 .community-events ul {
   background: var(--aside-background-color, #8cc7c2) !important;
 }
-#adminmenu .wp-has-current-submenu .wp-submenu *,
-#adminmenu .wp-has-current-submenu .wp-submenu.sub-open *,
+#adminmenu #adminmenu .wp-has-current-submenu .wp-submenu.sub-open *,
 #adminmenu .wp-has-current-submenu.opensub .wp-submenu *,
 #adminmenu a.wp-has-current-submenu:focus + .wp-submenu *,
 .no-js li.wp-has-current-submenu:hover .wp-submenu *,
-#adminmenu .wp-submenu *,
 .folded #adminmenu .wp-has-current-submenu .wp-submenu *,
 .folded #adminmenu a.wp-has-current-submenu:focus + .wp-submenu * {
   color: var(--aside-text-color, #434b5c) !important;
@@ -232,7 +240,20 @@ ul.striped > :nth-child(odd),
 #adminmenu a:hover,
 #adminmenu li.menu-top:hover,
 #adminmenu li.opensub > a.menu-top,
-#adminmenu li > a.menu-top:focus {
+#adminmenu li > a.menu-top:focus,
+.edit-post-header,
+.components-panel,
+.interface-interface-skeleton__secondary-sidebar,
+.interface-interface-skeleton__sidebar,
+.interface-complementary-area-header,
+.block-editor-inserter__search,
+.block-editor-inserter__tabs .components-tab-panel__tabs,
+.components-popover__content,
+.components-toolbar-group,
+.components-popover.block-editor-block-switcher__popover
+  .components-popover__content
+  > div,
+.block-editor-block-inspector__no-blocks {
   background: var(--offcanvas-background-color, #23282d) !important;
   color: var(--offcanvas-text-color, #ffffff) !important;
 }
@@ -253,8 +274,23 @@ ul.striped > :nth-child(odd),
 #adminmenu a:hover *,
 #adminmenu li.menu-top:hover *,
 #adminmenu li.opensub > a.menu-top *,
-#adminmenu li > a.menu-top:focus * {
+#adminmenu li > a.menu-top:focus *,
+.components-panel *,
+.components-button:hover,
+.components-button[aria-expanded="true"],
+.components-button.block-editor-block-types-list__item,
+.components-button {
   color: var(--offcanvas-text-color, #ffffff) !important;
+}
+.edit-post-header .components-button svg,
+.block-editor-block-icon.has-colors svg {
+  fill: var(--offcanvas-text-color, #ffffff) !important;
+}
+.components-button.edit-post-sidebar__panel-tab.is-active,
+.components-button.edit-post-sidebar__panel-tab.is-active:focus,
+.components-tab-panel__tabs-item.is-active {
+  box-shadow: inset 0 0 0 var(--wp-admin-border-width-focus) transparent,
+    inset 0 -4px 0 0 var(--offcanvas-text-color, #ffffff);
 }
 .notice-info {
   border-left-color: var(--info-color, #3d9cd2) !important;
@@ -290,7 +326,8 @@ div.updated {
   margin-left: auto;
   margin-right: auto;
 }
-.edit-post-visual-editor {
+.edit-post-visual-editor,
+.editor-styles-wrapper {
   background-color: var(--main-background-color, #dfdfd0);
 }
 .editor-styles-wrapper {
