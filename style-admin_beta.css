@@ -4,6 +4,9 @@ It's now up for the themes to implement the method.
 
 The backend style of this theme it's still a work in progress.
 */
+tr.user-admin-color-wrap {
+  display: none;
+}
 .login #login_error,
 .login .message,
 .login .success,
