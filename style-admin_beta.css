@@ -284,19 +284,21 @@ ul.striped > :nth-child(odd),
 #adminmenu li.menu-top:hover *,
 #adminmenu li.opensub > a.menu-top *,
 #adminmenu li > a.menu-top:focus *,
-.components-panel *,
-.components-button:hover,
-.components-button[aria-expanded="true"],
-.components-button.block-editor-block-types-list__item,
-.components-button {
+.components-panel *:not(.components-circular-option-picker__option),
+.components-button:hover:not(.components-circular-option-picker__option),
+.components-button[aria-expanded="true"]:not(.components-circular-option-picker__option),
+.components-button.block-editor-block-types-list__item:not(.components-circular-option-picker__option),
+.components-button:not(.components-circular-option-picker__option) {
   color: var(--offcanvas-text-color, #8cc7c2) !important;
 }
-.edit-post-header .components-button svg,
+.edit-post-header
+  .components-button:not(.components-circular-option-picker__option)
+  svg,
 .block-editor-block-icon.has-colors svg {
   fill: var(--offcanvas-text-color, #8cc7c2) !important;
 }
-.components-button.edit-post-sidebar__panel-tab.is-active,
-.components-button.edit-post-sidebar__panel-tab.is-active:focus,
+.components-button.edit-post-sidebar__panel-tab.is-active:not(.components-circular-option-picker__option),
+.components-button.edit-post-sidebar__panel-tab.is-active:focus:not(.components-circular-option-picker__option),
 .components-tab-panel__tabs-item.is-active {
   box-shadow: inset 0 0 0 var(--wp-admin-border-width-focus) transparent,
     inset 0 -4px 0 0 var(--offcanvas-text-color, #8cc7c2);
