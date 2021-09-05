@@ -123,7 +123,7 @@ code,
 kbd,
 samp {
   font-family: monospace, monospace;
-  font-size: var(--text, 1rem);
+  font-size: var(--font-size-4, 1rem);
 }
 /**
  * Add the correct font size in all browsers.
@@ -339,7 +339,7 @@ optgroup,
 textarea {
   color: var(--text-color, #404040);
   font-family: var(--text-font, sans-serif);
-  font-size: var(--text, 1rem);
+  font-size: var(--font-size-3, 1rem);
   line-height: var(--line-height, 1.5);
 }
 h1,
@@ -690,22 +690,22 @@ h6 {
   margin: var(--margin, 0.67rem) 0;
 }
 h1 {
-  font-size: var(--heading-1, 2rem);
+  font-size: var(--font-size-7, 2rem);
 }
 h2 {
-  font-size: var(--heading-2, 1.5rem);
+  font-size: var(--font-size-6, 1.125rem);
 }
 h3 {
-  font-size: var(--heading-3, 1.17rem);
+  font-size: var(--font-size-5, 1.17rem);
 }
 h4 {
-  font-size: var(--heading-4, 1rem);
+  font-size: var(--font-size-3, 0.875rem);
 }
 h5 {
-  font-size: var(--heading-5, 0.83rem);
+  font-size: var(--font-size-2, 0.75rem);
 }
 h6 {
-  font-size: var(--heading-6, 0.67rem);
+  font-size: var(--font-size-1, 0.625rem);
 }
 .mr-container {
   max-width: var(--container, 75rem);
