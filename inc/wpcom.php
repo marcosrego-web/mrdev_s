@@ -6,7 +6,6 @@
  *
  * @package _s
  */
-
 /**
  * Adds support for wp.com-specific theme functions.
  *
@@ -14,7 +13,6 @@
  */
 function _s_wpcom_setup() {
 	global $themecolors;
-
 	// Set theme colors for third party services.
 	if ( ! isset( $themecolors ) ) {
 		// Whitelist wpcom specific variable intended to be overruled.

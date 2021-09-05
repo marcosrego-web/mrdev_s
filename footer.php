@@ -8,16 +8,12 @@
  *
  * @package _s
  */
-
 ?>
-
 <?php
-	include 'mrdev-framework/functions/mainbottom.php';
-	include 'mrdev-framework/functions/footer.php';
+	include 'mrdev-framework/functions/layout/mainbottom.php';
+	include 'mrdev-framework/functions/layout/footer.php';
 ?>
 </div><!-- #page -->
-
 <?php wp_footer(); ?>
-
 </body>
 </html>
