@@ -59,8 +59,6 @@ if ( ! function_exists( '_s_setup' ) ) :
 		);
 		// Add theme support for selective refresh for widgets.
 		add_theme_support( 'customize-selective-refresh-widgets' );
-		// Add templates support on the blocks editor.
-		add_theme_support( 'block-templates' );
 	}
 endif;
 add_action( 'after_setup_theme', '_s_setup' );
