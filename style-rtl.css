@@ -4,7 +4,7 @@ Theme URI: https://marcosrego.com/web/mrdev/
 Author: Marcos Rego
 Author URI: https://marcosrego.com
 Description: The easiest way to start creating with Mr.Dev.'s Framework! Mr.Dev. grabbed Underscores, the famous starter theme for Wordpress, and made it fully compatible with each and every feature of his Framework.
-Version: 0.9.446
+Version: 0.9.447
 Tested up to: 5.4
 Requires PHP: 5.6
 License: GNU General Public License v2 or later
@@ -79,7 +79,7 @@ main {
  * 1. Add the correct box sizing in Firefox.
  * 2. Show the overflow in Edge and IE.
  */
-hr {
+hr:not(.wp-block-separator) {
   box-sizing: content-box;
   height: 0;
   overflow: visible;
@@ -401,13 +401,11 @@ big {
 body:not(.has-background) {
   background: var(--background-color, #fff);
 }
-hr:not(.has-background) {
-  background-color: var(--text-color, #ccc);
-}
-hr {
+hr:not(.wp-block-separator) {
   border: 0;
   height: 1px;
   margin-bottom: var(--margin, 1.5rem);
+  background-color: var(--text-color, #ccc);
 }
 ul,
 ol {
