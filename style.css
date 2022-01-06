@@ -724,7 +724,8 @@ h6:not(.has-text-color) {
   color: var(--text-color, #434b5c);
 }
 .mr-header,
-.post-template .wp-site-blocks > header {
+.post-template .wp-site-blocks > header,
+.page-template .wp-site-blocks > header {
   background-color: var(--header-background-color, #757d98);
 }
 .mr-header,
