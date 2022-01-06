@@ -4,7 +4,7 @@ Theme URI: https://marcosrego.com/web/mrdev/
 Author: Marcos Rego
 Author URI: https://marcosrego.com
 Description: The easiest way to start creating with Mr.Dev.'s Framework! Mr.Dev. grabbed Underscores, the famous starter theme for Wordpress, and made it fully compatible with each and every feature of his Framework.
-Version: 0.9.448
+Version: 0.9.449
 Tested up to: 5.4
 Requires PHP: 5.6
 License: GNU General Public License v2 or later
@@ -741,11 +741,19 @@ h6:not(.has-text-color) {
 .post-template .wp-site-blocks > header h4:not(.has-text-color),
 .post-template .wp-site-blocks > header h5:not(.has-text-color),
 .post-template .wp-site-blocks > header h6:not(.has-text-color),
-.post-template .wp-site-blocks > header a:not(.has-text-color) {
+.post-template .wp-site-blocks > header a:not(.has-text-color),
+.page-template .wp-site-blocks > header h1:not(.has-text-color),
+.page-template .wp-site-blocks > header h2:not(.has-text-color),
+.page-template .wp-site-blocks > header h3:not(.has-text-color),
+.page-template .wp-site-blocks > header h4:not(.has-text-color),
+.page-template .wp-site-blocks > header h5:not(.has-text-color),
+.page-template .wp-site-blocks > header h6:not(.has-text-color),
+.page-template .wp-site-blocks > header a:not(.has-text-color) {
   color: var(--header-text-color, #8cc7c2);
 }
 .mr-main,
-.post-template .wp-site-blocks > main {
+.post-template .wp-site-blocks > main,
+.page-template .wp-site-blocks > main {
   background: var(--main-background-color, #dfdfd0);
 }
 .mr-main,
@@ -762,7 +770,14 @@ h6:not(.has-text-color) {
 .post-template .wp-site-blocks > main h4:not(.has-text-color),
 .post-template .wp-site-blocks > main h5:not(.has-text-color),
 .post-template .wp-site-blocks > main h6:not(.has-text-color),
-.post-template .wp-site-blocks > main a:not(.has-text-color) {
+.post-template .wp-site-blocks > main a:not(.has-text-color),
+.page-template .wp-site-blocks > main h1:not(.has-text-color),
+.page-template .wp-site-blocks > main h2:not(.has-text-color),
+.page-template .wp-site-blocks > main h3:not(.has-text-color),
+.page-template .wp-site-blocks > main h4:not(.has-text-color),
+.page-template .wp-site-blocks > main h5:not(.has-text-color),
+.page-template .wp-site-blocks > main h6:not(.has-text-color),
+.page-template .wp-site-blocks > main a:not(.has-text-color) {
   color: var(--main-text-color, #434b5c);
 }
 .mr-aside {
@@ -779,7 +794,8 @@ h6:not(.has-text-color) {
   color: var(--aside-text-color, #434b5c);
 }
 .mr-footer,
-.post-template .wp-site-blocks > footer {
+.post-template .wp-site-blocks > footer,
+.page-template .wp-site-blocks > footer {
   background-color: var(--footer-background-color, #757d98);
 }
 .mr-footer,
@@ -796,6 +812,13 @@ h6:not(.has-text-color) {
 .post-template .wp-site-blocks > footer h4:not(.has-text-color),
 .post-template .wp-site-blocks > footer h5:not(.has-text-color),
 .post-template .wp-site-blocks > footer h6:not(.has-text-color),
-.post-template .wp-site-blocks > footer a:not(.has-text-color) {
+.post-template .wp-site-blocks > footer a:not(.has-text-color),
+.page-template .wp-site-blocks > footer h1:not(.has-text-color),
+.page-template .wp-site-blocks > footer h2:not(.has-text-color),
+.page-template .wp-site-blocks > footer h3:not(.has-text-color),
+.page-template .wp-site-blocks > footer h4:not(.has-text-color),
+.page-template .wp-site-blocks > footer h5:not(.has-text-color),
+.page-template .wp-site-blocks > footer h6:not(.has-text-color),
+.page-template .wp-site-blocks > footer a:not(.has-text-color) {
   color: var(--footer-text-color, rgba(255, 255, 255, 0.5));
 }
