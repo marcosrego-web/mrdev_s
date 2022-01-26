@@ -8,7 +8,7 @@
  */
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '0.9.451' );
+	define( '_S_VERSION', '0.9.454' );
 }
 if ( ! function_exists( '_s_setup' ) ) :
 	/**
@@ -123,3 +123,5 @@ if($mrdev_config_betatest === 1) {
 } else {
 	$myUpdateChecker->setBranch('master');
 }
+
+//add_action('after_setup_theme', 'mrdev_color_picker_blocks');

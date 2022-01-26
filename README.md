@@ -8,6 +8,8 @@ Mr.Dev. grabbed Underscores, the famous starter theme for Wordpress, and made it
 
 Being fully compatible with the framework is not mandatory. But this theme is because it brings the following:
 
+- Use of [Mr.Utils](https://marcosrego.com/development/mr-utils/) variables on the stylesheet (The optional frontend toolkit on Mr.Dev.'s Framework).
+
 - 20 colors. Because this theme is inspired by Underscores, the default color values are the colors of Underscores website.
 
 - 2 fonts. Being a starter theme it was decided to use system fonts by default: "Times New Roman" for headings and "Arial" for other text _(but this might change in the future)_.
