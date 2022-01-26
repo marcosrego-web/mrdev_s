@@ -22,6 +22,11 @@ get_header();
 			?>
 			<div class="page-content">
 				<p><?php esc_html_e( 'It looks like nothing was found at this location.', '_s' ); ?></p>
+				<div class="wp-block-buttons">
+					<div class="wp-block-button">
+						<a class="wp-block-button__link" href="<?php echo get_home_url(); ?>"><?php esc_html_e( 'Go to homepage', '_s' ); ?></a>
+					</div>
+				</div>
 			</div><!-- .page-content -->
 		</section><!-- .error-404 -->
 	</main><!-- #main -->

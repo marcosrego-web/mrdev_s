@@ -70,10 +70,10 @@ ${"mrdev_style_color_value20"} = '#dc3232';
 ${"mrdev_style_color_opacity20"} = 1;
 //FONTS
 $mrdev_styles_fonts_number_default = 2;
-${"mrdev_style_font_name1"} = 'Heading Font';
+${"mrdev_style_font_name1"} = 'Font 1';
 ${"mrdev_style_font_value1"} = 'TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif';
 ${"mrdev_style_font_url1"} = '';
-${"mrdev_style_font_name2"} = 'Text Font';
+${"mrdev_style_font_name2"} = 'Font 2';
 ${"mrdev_style_font_value2"} = 'Arial,Helvetica Neue,Helvetica';
 ${"mrdev_style_font_url2"} = '';
 //SIZES

@@ -18,12 +18,12 @@ Being fully compatible with the framework is not mandatory. But this theme is be
 
 - 4 sections when using Layout Control: Header Top, Main Content Top, Main Content Bottom and Footer Bottom.
 
-- Compatibility with every display option.
-
 **Some key differences vs Underscores:**
 
-- No default widgets and no forced logo or menu in the header - This is to better follow the new workflow on Wordpress _(using blocks and reusable blocks per page instead of widgets)_ and to prepare for the full site editor. You can still create new sidebars/sections using "layout control" on Mr.Dev.'s Framework.
+- Added default variables to core blocks.
+- No default widgets and no forced logo or menu in the header - This is to better follow the new workflow on Wordpress _(using blocks and reusable blocks per page instead of widgets)_ and to prepare for the full site editor. You can still create new sidebars/sections using "Blocks templates" from WP5.8 or "Layout control" on Mr.Dev.'s Framework.
 - Removed customizer additions - Most of those additions were not needed: They would force the website to show the sitename on a specific place or are better kept to plugins such as Mr.Dev.'s Framework.
 - Removed forced image sizes on Woocommerce - Removed the default sizes of 150 and 300 for product images because those can be set using the Customizer. All other compatibility with Woocommerce and Jetpack was kept in this theme.
 - Limit post navigation to same categories.
-- Templates support on the blocks editor.
+
+* To follow all the changes and improvements check the [closed requests](https://github.com/marcosrego-web/mrdev_s/pulls?q=is%3Apr+is%3Aclosed).
