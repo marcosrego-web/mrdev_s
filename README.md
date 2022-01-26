@@ -25,3 +25,5 @@ Being fully compatible with the framework is not mandatory. But this theme is be
 - Removed customizer additions - Most of those additions were not needed: They would force the website to show the sitename on a specific place or are better kept to plugins such as Mr.Dev.'s Framework.
 - Removed forced image sizes on Woocommerce - Removed the default sizes of 150 and 300 for product images because those can be set using the Customizer. All other compatibility with Woocommerce and Jetpack was kept in this theme.
 - Limit post navigation to same categories.
+
+* To follow all the changes and improvements check the [closed requests](https://github.com/marcosrego-web/mrdev_s/pulls?q=is%3Apr+is%3Aclosed).

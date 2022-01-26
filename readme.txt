@@ -6,7 +6,7 @@ Tags: mrdev, mrdev-framework, widgets, widget, widgetsarea, sidebar, custom-back
 Requires at least: 4.5
 Tested up to: 5.7
 Requires PHP: 5.6
-Stable tag: 0.9.450
+Stable tag: 0.9.451
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
@@ -39,8 +39,7 @@ Mr.Dev_s includes support for Mr.Dev.'s Framework, WooCommerce and for Infinite 
 
 == Changelog ==
 
-= 0.9.41 - Jan 09 2021 =
-* Initial release
+* To know all the changes check the [closed requests on Mr.Dev_s github repository](https://github.com/marcosrego-web/mrdev_s/pulls?q=is%3Apr+is%3Aclosed).
 
 == Credits ==
 
