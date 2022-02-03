@@ -1,8 +1,8 @@
 # Mr.Dev_s
 
-The easiest way to start creating with Mr.Dev.'s Framework!
-
 Mr.Dev. grabbed Underscores, the famous starter theme for Wordpress, and made it fully compatible with each and every feature of his Framework.
+
+(This theme does not support Blocks Full Site Editing, you can use [Mr.Dev's Theme](https://github.com/marcosrego-web/mrdev-theme) instead)
 
 **Mr.Dev.'s Framework**
 

@@ -3,8 +3,8 @@ Theme Name: Mr.Dev_s
 Theme URI: https://marcosrego.com/web/mrdev/
 Author: Marcos Rego
 Author URI: https://marcosrego.com
-Description: The easiest way to start creating with Mr.Dev.'s Framework! Mr.Dev. grabbed Underscores, the famous starter theme for Wordpress, and made it fully compatible with each and every feature of his Framework.
-Version: 0.9.456
+Description: Mr.Dev. grabbed Underscores, the famous starter theme for Wordpress, and made it fully compatible with each and every feature of his Framework.
+Version: 0.9.457
 Tested up to: 5.9
 Requires PHP: 5.6
 License: GNU General Public License v2 or later
@@ -643,10 +643,7 @@ a:focus {
   margin-left: auto;
   margin-bottom: var(--margin, 1.5rem);
 }
-/*--------------------------------------------------------------
-# More changes for Mr.Dev.'s Framework
---------------------------------------------------------------*/
-/* Other style changes
+/* Blocks styles
 --------------------------------------------- */
 :root {
   --gallery-block--gutter-size: var(--margin, 16px);
@@ -675,23 +672,23 @@ body .wp-block-buttons {
 @media (min-width: 600px) {
   .wp-block-post-template.is-flex-container.is-flex-container.columns-2 > li,
   .wp-block-query-loop.is-flex-container.is-flex-container.columns-2 > li {
-    width: calc(50% - (var(--margin) / 2));
+    width: calc(50% - (var(--margin, calc(0.625em * 2)) / 2));
   }
   .wp-block-post-template.is-flex-container.is-flex-container.columns-3 > li,
   .wp-block-query-loop.is-flex-container.is-flex-container.columns-3 > li {
-    width: calc(33.33333% - (var(--margin) / 2));
+    width: calc(33.33333% - (var(--margin, calc(0.83333em * 2)) / 2));
   }
   .wp-block-post-template.is-flex-container.is-flex-container.columns-4 > li,
   .wp-block-query-loop.is-flex-container.is-flex-container.columns-4 > li {
-    width: calc(25% - (var(--margin) / 2));
+    width: calc(25% - (var(--margin, calc(0.9375em * 2)) / 2));
   }
   .wp-block-post-template.is-flex-container.is-flex-container.columns-5 > li,
   .wp-block-query-loop.is-flex-container.is-flex-container.columns-5 > li {
-    width: calc(20% - (var(--margin) / 2));
+    width: calc(20% - (var(--margin, calc(1em * 2)) / 2));
   }
   .wp-block-post-template.is-flex-container.is-flex-container.columns-6 > li,
   .wp-block-query-loop.is-flex-container.is-flex-container.columns-6 > li {
-    width: calc(16.66666% - (var(--margin) / 2));
+    width: calc(16.66666% - (var(--margin, calc(1.04167em * 2)) / 2));
   }
 }
 @media (min-width: 782px) {
@@ -710,7 +707,7 @@ body .wp-block-buttons {
     flex-grow: 0;
   }
 }
-/* Other styles
+/* Mr.Utils and Mr.Dev's default styles
 --------------------------------------------- */
 h1,
 h2,
