@@ -10,13 +10,13 @@ Stable tag: 0.9.451
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
-The easiest way to start creating with Mr.Dev.'s Framework! Mr.Dev. grabbed Underscores, the famous starter theme for Wordpress, and made it fully compatible with each and every feature of his Framework.
+Mr.Dev. grabbed Underscores, the famous starter theme for Wordpress, and made it fully compatible with each and every feature of his Framework (This theme does not support Blocks Full Site Editing, you can use Mr.Dev.'s Theme instead).
 
 == Description ==
 
-The easiest way to start creating with Mr.Dev.'s Framework!
-
 Mr.Dev. grabbed Underscores, the famous starter theme for Wordpress, and made it fully compatible with each and every feature of his Framework.
+
+(This theme does not support Blocks Full Site Editing, you can use Mr.Dev.'s Theme instead)
 
 Some key differences:
 - Added default variables to core blocks.

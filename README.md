@@ -1,12 +1,14 @@
 # Mr.Dev_s
 
-The easiest way to start creating with Mr.Dev.'s Framework!
-
 Mr.Dev. grabbed Underscores, the famous starter theme for Wordpress, and made it fully compatible with each and every feature of his Framework.
+
+(This theme does not support Blocks Full Site Editing, you can use [Mr.Dev's Theme](https://github.com/marcosrego-web/mrdev-theme) instead)
 
 **Mr.Dev.'s Framework**
 
 Being fully compatible with the framework is not mandatory. But this theme is because it brings the following:
+
+- Use of [Mr.Utils](https://marcosrego.com/development/mr-utils/) variables on the stylesheet (The optional frontend toolkit on Mr.Dev.'s Framework).
 
 - 20 colors. Because this theme is inspired by Underscores, the default color values are the colors of Underscores website.
 

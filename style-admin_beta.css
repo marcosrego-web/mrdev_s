@@ -149,7 +149,7 @@ table.widefat,
 body {
   background: var(--main-background-color, #dfdfd0) !important;
   color: var(--main-text-color, #434b5c) !important;
-  font-family: var(--text-font, "Arial,Helvetica Neue,Helvetica");
+  font-family: var(--font-2, "Arial,Helvetica Neue,Helvetica");
 }
 /*body
   *:not(button):not(svg):not(path):not([class^="cm-"]):not([role="treeitem"]):not(.components-checkbox-control__label):not(.components-toggle-control__label):not(.components-base-control__label):not(span) {
@@ -160,7 +160,7 @@ p,
 li,
 th,
 label {
-  font-family: var(--text-font, "Arial,Helvetica Neue,Helvetica");
+  font-family: var(--font-2, "Arial,Helvetica Neue,Helvetica");
 }
 p,
 li,
@@ -183,7 +183,7 @@ h4,
 h5,
 h6 {
   font-family: var(
-    --heading-font,
+    --font-1,
     "TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif"
   );
 }
