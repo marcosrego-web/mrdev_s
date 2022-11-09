@@ -4,7 +4,7 @@ Theme URI: https://marcosrego.com/web/mrdev/
 Author: Marcos Rego
 Author URI: https://marcosrego.com
 Description: Mr.Dev. grabbed Underscores, the famous starter theme for Wordpress, and made it fully compatible with each and every feature of his Framework.
-Version: 0.9.457
+Version: 0.9.460
 Tested up to: 5.9
 Requires PHP: 5.6
 License: GNU General Public License v2 or later
@@ -535,7 +535,7 @@ a:focus {
 .gallery {
   margin-bottom: var(--margin, 1.5rem);
   display: grid;
-  grid-gap: var(--margin, 1.5rem);
+  grid-gap: var(--gap, var(--margin, 2em));
 }
 .gallery-item {
   display: inline-block;
@@ -646,8 +646,8 @@ a:focus {
 /* Blocks styles
 --------------------------------------------- */
 :root {
-  --gallery-block--gutter-size: var(--margin, 16px);
-  --wp--style--block-gap: var(--margin, 2em);
+  --gallery-block--gutter-size: var(--gap, var(--margin, 2em));
+  --wp--style--block-gap: var(--gap, var(--margin, 2em));
 }
 html {
   height: 100%;
@@ -666,8 +666,9 @@ html {
 }
 .wp-block-post-template.is-flex-container,
 .wp-block-query-loop.is-flex-container,
-body .wp-block-buttons {
-  gap: var(--margin);
+body .wp-block-buttons,
+:where(.wp-block-columns.is-layout-flex) {
+  gap: var(--gap, var(--margin, 2em));
 }
 @media (min-width: 600px) {
   .wp-block-post-template.is-flex-container.is-flex-container.columns-2 > li,
@@ -861,4 +862,14 @@ h6:not(.has-text-color) {
 .page-template .wp-site-blocks > footer h6:not(.has-text-color),
 .page-template .wp-site-blocks > footer a:not(.has-text-color) {
   color: var(--footer-text-color, rgba(255, 255, 255, 0.5));
+}
+.wp-block-navigation:not(.has-background)
+  .wp-block-navigation__responsive-container.is-menu-open {
+  background-color: #fff;
+  background-color: var(
+    --offcanvas-background-color,
+    var(--background-color, #fff)
+  );
+  color: #000;
+  color: var(--offcanvas-text-color, var(--text-color, #000));
 }
