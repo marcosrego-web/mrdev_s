@@ -6,7 +6,7 @@ Tags: mrdev, mrdev-framework, widgets, widget, widgetsarea, sidebar, custom-back
 Requires at least: 4.5
 Tested up to: 5.7
 Requires PHP: 5.6
-Stable tag: 0.9.451
+Stable tag: 0.9.460
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
